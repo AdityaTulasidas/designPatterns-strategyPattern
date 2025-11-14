@@ -6,6 +6,7 @@ abstract class CaffeineBeverage {
         brew();
         pourInCup();
         addCondiments();
+        cleanUp();
     }
     abstract void brew();
     abstract void addCondiments();
@@ -14,6 +15,10 @@ abstract class CaffeineBeverage {
     }
     void pourInCup() {
         System.out.println("Pouring into cup");
+    }
+    // Private method example in an abstract class
+     private void cleanUp() {
+        System.out.println("Cleaning up after making beverage");
     }
 }
 
